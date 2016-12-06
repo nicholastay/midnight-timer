@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Midnight Timer
+        </title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="A simple midnight timer.">
+        <meta name="author" content="Nicholas Tay / @_nexerq">
+        <meta property="og:title" content="Midnight Timer">
+        <meta property="og:image" content="https://nicholastay.github.io/midnight-timer/img/logo.png">
+        <meta property="og:description" content="A simple midnight timer.">
+
+        <meta name="viewport" content="width=600, initial-scale=1">
+
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <div class="header">
+                    Midnight Timer
+                </div>
+
+                <div id="timeblock"></div>
+
+                <div class="timezone-block">
+                    <select id="timezone-info"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span id="notif-wrap" style="display: none;"><label><input type="checkbox" id="notif-check"> enable notification for midnight</label></span><br>
+            *probably* useful for games that rely on midnight reset timers<br>
+
+            a simple webapp by <a href="https://twitter.com/@_nexerq">@nicholastay / Nexerq</a> -- feel free to check this project out on <a href="https://github.com/nicholastay/midnight-timer">GitHub</a>
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
