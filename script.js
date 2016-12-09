@@ -29,11 +29,13 @@ function _genTimezoneElem(zone) {
 }
 
 function populateSelectBox(select) {
+    var tzs = [];
     for (var i = timezones.min; i <= timezones.max; i++)
-        select.appendChild(_genTimezoneElem(i));
+        tzs.push(i);
 
-    for (var i = 0; i < timezones.odd_zones.length; i++)
-        select.appendChild(_genTimezoneElem(timezones.odd_zones[i]));
+    tzs = tzs.concat(timezones.odd_zones).sort();
+    for (var i = 0; i < tzs.length; i++)
+        select.appendChild(_genTimezoneElem(tzs[i]));
 
     select.value = 'UTC'; // default +0
 }
